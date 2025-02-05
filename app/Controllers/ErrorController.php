@@ -1,8 +1,8 @@
 <?php
 namespace app\Controllers;
 
-
-class ErrorController{
+use app\core\Controller;
+class ErrorController extends Controller{
 
 
 
@@ -13,10 +13,9 @@ class ErrorController{
 
     public function error()
     {
-        // $path= $_SERVER['HTTP_REFERER'];
-        include_once '../app/Views/404.php';
-        // header("location: $path");
-
+        $this->render('404');
+        // include_once '../app/Views/404.php';
+        
     }
 
 }

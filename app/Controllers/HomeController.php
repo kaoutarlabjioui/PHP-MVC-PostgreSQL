@@ -1,12 +1,16 @@
 <?php 
 namespace app\Controllers;
 
-class HomeController
+use app\core\Controller;
+
+class HomeController extends Controller
 {
 
     public function index()
     {
-        include '../app/Views/Home.php';
+        // include '../app/Views/Home.php';
+
+        $this->render('Home');
     }
 
 
